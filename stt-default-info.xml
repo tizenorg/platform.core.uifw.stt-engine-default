@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<stt-engine>
+	<name>Samsung ASR N66</name>
+        <id>4FAF79CF-FE69-40E0-AE11-69369F6DA743</id>
+        <languages>
+                <lang>en_US</lang>
+                <lang>es_US</lang>
+                <lang>fr_FR</lang>
+                <lang>ja_JP</lang>
+                <lang>ko_KR</lang>
+                <lang>zh_CN</lang>
+        </languages>
+        <silence-detection-support>true</silence-detection-support>
+        <credential>false</credential>
+</stt-engine>
