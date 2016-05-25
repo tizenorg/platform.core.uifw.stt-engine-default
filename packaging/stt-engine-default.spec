@@ -6,7 +6,7 @@ Summary:    Speech To Text default engine library
 Version:    0.0.15a
 Release:    1
 Group:      Graphics & UI Framework/Voice Framework
-License:    Samsung Proprietary License
+License:    Flora-1.1
 Source0:    %{name}-%{version}.tar.gz
 Source1001: %{name}.manifest
 
