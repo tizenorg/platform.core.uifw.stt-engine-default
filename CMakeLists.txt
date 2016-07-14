@@ -1,5 +1,5 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-PROJECT(stt-engine-default C)
+PROJECT(org.tizen.stt-engine-default C)
 
 SET(VERSION 0.0.15a)
 FIND_PROGRAM(UNAME NAMES uname)
@@ -46,4 +46,6 @@ INSTALL(FILES ${CMAKE_SOURCE_DIR}/lib/x86_64/libsvoicedll.so DESTINATION ${LIBDI
 INSTALL(FILES ${CMAKE_SOURCE_DIR}/lib/x86_64/libvoiceactivity.so DESTINATION ${LIBDIR}/ COMPONENT RuntimeLibraries)
 ENDIF()
 
-INSTALL(FILES ${CMAKE_SOURCE_DIR}/stt-default-info.xml DESTINATION ${TZ_SYS_RO_SHARE}/voice/stt/1.0/engine-info/)
+INSTALL(PROGRAMS ${CMAKE_SOURCE_DIR}/bin/org.tizen.stt-engine-default DESTINATION ${APP_INSTALL_PREFIX}/bin/)
+INSTALL(FILES ${CMAKE_SOURCE_DIR}/org.tizen.stt-engine-default-info.xml DESTINATION ${TZ_SYS_RO_SHARE}/voice/stt/1.0/engine-info/)
+INSTALL(FILES ${CMAKE_SOURCE_DIR}/org.tizen.stt-engine-default.xml DESTINATION ${APP_MANIFESTDIR})
