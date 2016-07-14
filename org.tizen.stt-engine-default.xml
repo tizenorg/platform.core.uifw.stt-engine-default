@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="3.0" package="org.tizen.stt-engine-default" version="1.0.0">
+    <profile name="mobile"/>
+    <service-application appid="org.tizen.stt-engine-default" exec="org.tizen.stt-engine-default" multiple="false" nodisplay="true" taskmanage="false" type="capp">
+        <label>org.tizen.stt-engine-default</label>
+        <icon>stt-engine-default.png</icon>
+        <metadata key="http://tizen.org/metadata/stt-engine/uuid" value="4FAF79CF-FE69-40E0-AE11-69369F6DA743"/>
+        <metadata key="http://tizen.org/metadata/stt-engine/language" value="en_US,es_US,fr_FR,ja_JP,ko_KR,zh_CN"/>
+        <metadata key="http://tizen.org/metadata/stt-engine/silence-detection" value="true"/>
+    </service-application>
+    <privileges>
+        <privilege>http://tizen.org/privilege/recorder</privilege>
+        <privilege>http://tizen.org/privilege/appmanager.launch</privilege>
+    </privileges>
+</manifest>
